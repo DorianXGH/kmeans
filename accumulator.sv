@@ -10,8 +10,8 @@ module accumulator
     input logic rst,
     input logic acc,
     input logic swap,
-    output logic done
-    output logic [32:0] new_centroids [2**n-1:0][d-1:0];
+    output logic done,
+    output logic [32:0] new_centroids [2**n-1:0][d-1:0]
 );
     logic [63:0] accu [2**n-1:0][d-1:0];
     logic [31:0] incr [2**n-1:0];
