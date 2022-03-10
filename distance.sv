@@ -1,3 +1,7 @@
+// This file is part of K-means module
+// Copyright (C) 2022  Dorian Bourgeoisat
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 module distance #(
     parameter int n = 8,
     parameter int d = 2

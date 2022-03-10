@@ -1,3 +1,7 @@
+// This file is part of K-means module
+// Copyright (C) 2022  Dorian Bourgeoisat
+// SPDX-License-Identifier: GPL-3.0-or-later
+
 module tb_distance();
     logic [31:0] dists [2**8-1:0];
     logic [31:0] centroids [2**8-1:0][1:0];
