@@ -8,6 +8,6 @@ module classifier #(
     output logic [31:0] id_class
 );
     logic [31:0] dists [2**n-1:0];
-    distance d_block (.dists(dists),.centroids(centroids),.point(point));
-    large_min min_block (.dists(dists),.id_class(id_class));
+    distance #(8,2) d_block (.dists(dists),.centroids(centroids),.point(point));
+    large_min #(8) min_block (.dists(dists),.id_class(id_class));
 endmodule
